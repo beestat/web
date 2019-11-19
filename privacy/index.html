@@ -1,0 +1,192 @@
+<!doctype html>
+<html>
+  <head>
+    <title>beestat</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="theme-color" content="#2f3d44">
+    <link href="css/privacy.css" rel="stylesheet">
+    <style type="text/css">
+      @font-face{
+        font-family:"Montserrat";
+        font-weight:200;
+        font-style:normal;
+        src:url("../font/montserrat/montserrat_200.eot?") format("embedded-opentype"),url("../font/montserrat/montserrat_200.woff") format("woff"),url("../font/montserrat/montserrat_200.ttf") format("truetype"),url("../font/montserrat/montserrat_200.svg#Montserrat") format("svg")
+      }
+      @font-face{
+        font-family:"Montserrat";
+        font-weight:300;
+        font-style:normal;
+        src:url("../font/montserrat/montserrat_300.eot?") format("embedded-opentype"),url("../font/montserrat/montserrat_300.woff") format("woff"),url("../font/montserrat/montserrat_300.ttf") format("truetype"),url("../font/montserrat/montserrat_300.svg#Montserrat") format("svg")
+      }
+      @font-face{
+        font-family:"Montserrat";
+        font-weight:500;
+        font-style:normal;
+        src:url("../font/montserrat/montserrat_500.eot?") format("embedded-opentype"),url("../font/montserrat/montserrat_500.woff") format("woff"),url("../font/montserrat/montserrat_500.ttf") format("truetype"),url("../font/montserrat/montserrat_500.svg#Montserrat") format("svg")
+      }
+
+      html {
+        box-sizing: border-box;
+      }
+
+      *, *:before, *:after {
+        box-sizing: inherit;
+      }
+
+      body {
+        padding: 0;
+        margin: 0;
+        background: #2f3d44;
+        font-family: Montserrat;
+        overflow-x: hidden;
+      }
+
+      a {
+        color: #0fb9b1;
+        text-decoration: none;
+        transition: color 200ms ease;
+      }
+
+      a:hover {
+        color: #2bcbba;
+      }
+
+      .logo {
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 8px;
+      }
+
+      .beestat {
+        display: inline-block;
+        vertical-align: middle;
+        font-weight: 200;
+        font-size: 32px;
+      }
+
+      .beestat > .bee {
+        color: #fed330;
+      }
+
+      .beestat > .stat {
+        color: #3bdf83;
+      }
+
+      hr {
+        height: 2px;
+        border: none;
+        background: #38474f;
+      }
+
+      footer {
+        background: #38474f;
+        padding: 48px 0 48px 0;
+        text-align: center;
+        color: #fff;
+        font-size: 13px;
+      }
+
+      footer > a {
+        color: #fff;
+        text-decoration: none;
+        margin: 0 16px 0 16px;
+        transition: color 200ms ease;
+      }
+
+      footer > a:hover {
+        color: #3bdf83;
+      }
+
+      /* Specific to this page. */
+      header {
+        padding: 20px;
+      }
+
+      main {
+        background: #3bdf83;
+        padding: 40px 0 40px 0;
+        transform: skewY(-2deg);
+        transform-origin: top left;
+        margin-bottom: 48px;
+      }
+
+      .inner {
+        max-width: 760px;
+        padding: 0 32px 0 32px;
+        margin: auto;
+      }
+
+      .main_row {
+        transform: skewY(2deg);
+        transform-origin: top left;
+        align-items: center;
+        text-align: center;
+      }
+
+      .main_text {
+        color: #2f3d44;
+        font-size: 19px;
+        margin-bottom: 24px;
+        font-weight: 500;
+      }
+
+      .privacy {
+        color: #fff;
+        font-size: 14px;
+        font-weight: 300;
+        margin-bottom: 48px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img class="logo" src="../favicon.png" height="48" width="48" alt="beestat logo"/>
+      <div class="beestat">
+        <span class="bee">bee</span><span class="stat">stat</span>
+      </div>
+    </header>
+    <main>
+      <div class="inner">
+        <div class="main_row">
+          <div class="main_text">
+            Privacy
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <section class="inner privacy">
+      <p>By using beestat, you agree to allow the collection and processing of the information described in this privacy statement.</p>
+
+      <h1>1. Information We Collect</h1>
+      <p>When you connect your ecobee account, beestat initiates a sync of nearly all of the accessible data to a local database. This includes, but is not limited to, these things:</p>
+      <ul>
+         <li>Email address</li>
+         <li>Physical address and home characteristics</li>
+         <li>Thermostat and sensor listings</li>
+         <li>Thermostat configuration and schedule</li>
+         <li>Historical runtime data</li>
+      </ul>
+      <h1>2. How We Use Information</h1>
+      <p>All of the collected information is used to provide a service to you. This includes all of the normal application functionality. Additionally, your information will be used in aggregate to provide anonymous home comparisons to other users.</p>
+      <h1>3. How We Share Information</h1>
+      <p>In order to provide a meaningful service, the following third party services receive parts of your data. This includes things like your email address, physical address, and browser information. Third parties never receive more information than necessary.</p>
+      <ul>
+        <li>Digital Ocean</li>
+        <li>Mailchimp</li>
+        <li>SmartyStreets</li>
+        <li>Rollbar</li>
+      </ul>
+      <h1>4. Data Retention</h1>
+      <p>High resolution (5 minute) runtime data is stored for approximately one year. All other information is stored indefinitely. If you would like to have your data removed, submit a request to <a href="mailto:contact@beestat.io">contact@beestat.io</a>.</p>
+    </section>
+
+    <footer>
+      <a href="mailto:contact@beestat.io">Contact</a>
+      <a href="/privacy">Privacy</a>
+      <a href="http://eepurl.com/dum59r" target="_blank">Mailing List</a>
+      <a href="https://api.beestat.io/doc" target="_blank">API</a>
+    </footer>
+  </body>
+</html>
